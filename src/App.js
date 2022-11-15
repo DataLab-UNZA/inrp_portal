@@ -48,11 +48,7 @@ const config = {
   query: new MultiMatchQuery({
     fields: [
       "title",
-      "subject",
-      "creator",
-      "publisher",
-      "description",
-      "date"
+      "description"
     ]
   }),
   facets: [
@@ -157,8 +153,8 @@ const HitsList = ({ data }) => (
                 <EuiTitle size="xs">
                   <h6>{hit.fields.title}</h6>
                 </EuiTitle>
-                <EuiText grow={false}>
-                  <p>{hit.fields.description}</p>
+                <EuiText grow={4}>
+                  <p>{String(hit.fields.description).substring(0, 300)}</p>
                 </EuiText>
               </EuiFlexItem>
             </EuiFlexGroup>
