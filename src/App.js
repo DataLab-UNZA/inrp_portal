@@ -34,27 +34,47 @@ import {
 import "@elastic/eui/dist/eui_theme_light.css";
 
 const config = {
-  host: "https://commerce-demo.es.us-east4.gcp.elastic-cloud.com:9243",
+  //host: "https://commerce-demo.es.us-east4.gcp.elastic-cloud.com:9243",
+  host: "https://unza22-ict4014-groupbkm2.es.us-central1.gcp.cloud.es.io",
   connectionOptions: {
-    apiKey: "NWF4c2VYOEJzRDhHMzlEX1JDejU6YnJXaS1XWjlSZ2F5ek1Cc3V4aXV6dw=="
+    //apiKey: "NWF4c2VYOEJzRDhHMzlEX1JDejU6YnJXaS1XWjlSZ2F5ek1Cc3V4aXV6dw=="
+    apiKey: "MnUtRWU0UUItdTFTc01xaDh2X1M6U0dqZkowWm5SV3l6dl9uZnRBaXBkdw=="
   },
-  index: "imdb_movies",
+  //index: "imdb_movies",
+  index: "inrp_unza_portals",
   hits: {
     fields: ["title"]
   },
   query: new MultiMatchQuery({
     fields: [
       "title",
-      "genres",
-      "directors",
-      "writers",
-      "actors",
-      "countries",
-      "plot"
+      "subject",
+      "creator",
+      "publisher",
+      "description",
+      "date"
     ]
   }),
   facets: [
     new RefinementSelectFacet({
+      field: "publisher",
+      identifier: "publisher",
+      label: "Publisher",
+      multipleSelect: true
+    }),
+    new RefinementSelectFacet({
+      field: "creator",
+      identifier: "creator",
+      label: "Authors",
+      multipleSelect: true
+    }),
+    new RefinementSelectFacet({
+      field: "subject",
+      identifier: "subject",
+      label: "Topics",
+      multipleSelect: true
+    })
+    /*new RefinementSelectFacet({
       field: "type",
       identifier: "type",
       label: "Type",
@@ -122,7 +142,7 @@ const config = {
         max: 10,
         min: 1
       }
-    })
+    })*/
   ]
 };
 
@@ -145,22 +165,7 @@ const HitsList = ({ data }) => (
                   <h6>{hit.fields.title}</h6>
                 </EuiTitle>
                 <EuiText grow={false}>
-                  <p>{hit.fields.plot}</p>
-                </EuiText>
-              </EuiFlexItem>
-              <EuiFlexItem grow={2}>
-                <EuiText grow={false}>
-                  <ul>
-                    <li>
-                      <b>ACTORS: </b>
-                      {hit.fields.actors.join(", ")}
-                    </li>
-
-                    <li>
-                      <b>WRITERS: </b>
-                      {hit.fields.writers.join(", ")}
-                    </li>
-                  </ul>
+                  <p>{hit.fields.description}</p>
                 </EuiText>
               </EuiFlexItem>
             </EuiFlexGroup>
