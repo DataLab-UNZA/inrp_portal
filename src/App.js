@@ -153,13 +153,6 @@ const HitsList = ({ data }) => (
         <EuiFlexGroup gutterSize="xl">
           <EuiFlexItem>
             <EuiFlexGroup>
-              <EuiFlexItem grow={false}>
-                <img
-                  src={hit.fields.poster}
-                  alt="Nature"
-                  style={{ height: "150px" }}
-                />
-              </EuiFlexItem>
               <EuiFlexItem grow={4}>
                 <EuiTitle size="xs">
                   <h6>{hit.fields.title}</h6>
