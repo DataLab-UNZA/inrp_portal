@@ -1,0 +1,590 @@
+
+> searchkit-cra@1.0.0 start
+> react-scripts start
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+(node:41891) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:41891) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view searchkit-cra in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.50.55:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+assets by path static/js/*.js 6.88 MiB
+  asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+  asset static/js/icon.logo_golang-js.chunk.js 13.7 KiB [emitted] (name: icon.logo_golang-js) (id hint: vendors) 1 related asset
+  asset static/js/icon.logo_apache-js.chunk.js 11.9 KiB [emitted] (name: icon.logo_apache-js) 1 related asset
+  asset static/js/icon.logo_haproxy-js.chunk.js 10 KiB [emitted] (name: icon.logo_haproxy-js) 1 related asset
+  asset static/js/icon.logo_php-js.chunk.js 9.64 KiB [emitted] (name: icon.logo_php-js) 1 related asset
+  asset static/js/icon.logo_postgres-js.chunk.js 8.43 KiB [emitted] (name: icon.logo_postgres-js) 1 related asset
+  asset static/js/icon.logo_gmail-js.chunk.js 8.41 KiB [emitted] (name: icon.logo_gmail-js) 1 related asset
+  asset static/js/icon.logo_ibm-js.chunk.js 8.29 KiB [emitted] (name: icon.logo_ibm-js) 1 related asset
+  asset static/js/icon.logo_memcached-js.chunk.js 6.91 KiB [emitted] (name: icon.logo_memcached-js) 1 related asset
+  asset static/js/icon.logo_kubernetes-js.chunk.js 6.35 KiB [emitted] (name: icon.logo_kubernetes-js) 1 related asset
+  asset static/js/icon.logo_aws-js.chunk.js 6.23 KiB [emitted] (name: icon.logo_aws-js) 1 related asset
+  + 395 assets
+asset asset-manifest.json 65.5 KiB [emitted]
+asset index.html 1.12 KiB [emitted]
+cached modules 13.8 MiB [cached] 2309 modules
+runtime modules 31.8 KiB 16 modules
+webpack 5.70.0 compiled successfully in 4910 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.a7a9803349b15a823ad1.hot-update.js 19 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.a7a9803349b15a823ad1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.a7a9803349b15a823ad1.hot-update.js 19 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.4 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 2032 ms
+Compiling...
+Failed to compile.
+
+src/App.js
+Syntax error: Expected corresponding JSX closing tag for <p>. (157:71) (157:71)
+assets by chunk 2.13 MiB (name: main)
+  asset static/js/bundle.js 2.11 MiB [emitted] (name: main) 1 related asset
+  asset main.56023379b148d4b12f84.hot-update.js 21.6 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 61 KiB
+  asset main.56023379b148d4b12f84.hot-update.json 60.7 KiB [emitted] [immutable] [hmr]
+  asset asset-manifest.json 315 bytes [emitted]
+asset index.html 1.12 KiB [emitted]
+Entrypoint main 2.13 MiB (2.24 MiB) = static/js/bundle.js 2.11 MiB main.56023379b148d4b12f84.hot-update.js 21.6 KiB 2 auxiliary assets
+cached modules 1.97 MiB [cached] 136 modules
+runtime modules 28.5 KiB 14 modules
+javascript modules 1.78 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 39 bytes [built] [code generated] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/groupbkm2/projects/inrp_app/src/App.js: Expected corresponding JSX closing tag for <p>. (157:71)
+
+  155 |                 </EuiTitle>
+  156 |                 <EuiText grow={4}>
+> 157 |                   <p>{String(hit.fields.description).substring(0, 300)}</br>URL</p>
+      |                                                                        ^
+  158 |                 </EuiText>
+  159 |               </EuiFlexItem>
+  160 |             </EuiFlexGroup>
+    at instantiate (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7983:16)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+ @ ./src/index.js 6:0-24 9:59-62
+
+ERROR in src/App.js
+  Line 157:71:  Parsing error: Expected corresponding JSX closing tag for <p>. (157:71)
+
+webpack 5.70.0 compiled with 2 errors in 477 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 9.04 MiB [emitted]
+  assets by chunk 8.97 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.c3e44e4a7a78205bc506.hot-update.js 3.44 MiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.c3e44e4a7a78205bc506.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 8.97 MiB (9.02 MiB) = static/js/bundle.js 5.53 MiB main.c3e44e4a7a78205bc506.hot-update.js 3.44 MiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2307 modules
+runtime modules 31.8 KiB 16 modules
+javascript modules 12.9 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1186 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.37a0f21697373faad37f.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.37a0f21697373faad37f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.37a0f21697373faad37f.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1381 ms
+Compiling...
+Failed to compile.
+
+src/App.js
+Syntax error: Expected corresponding JSX closing tag for <br>. (157:78) (157:78)
+assets by chunk 2.13 MiB (name: main)
+  asset static/js/bundle.js 2.11 MiB [emitted] (name: main) 1 related asset
+  asset main.8ab6ab1c49737a633570.hot-update.js 21.6 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 61 KiB
+  asset main.8ab6ab1c49737a633570.hot-update.json 60.7 KiB [emitted] [immutable] [hmr]
+  asset asset-manifest.json 315 bytes [emitted]
+asset index.html 1.12 KiB [emitted]
+Entrypoint main 2.13 MiB (2.24 MiB) = static/js/bundle.js 2.11 MiB main.8ab6ab1c49737a633570.hot-update.js 21.6 KiB 2 auxiliary assets
+cached modules 1.97 MiB [cached] 136 modules
+runtime modules 28.5 KiB 14 modules
+javascript modules 1.78 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 39 bytes [built] [code generated] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/groupbkm2/projects/inrp_app/src/App.js: Expected corresponding JSX closing tag for <br>. (157:78)
+
+  155 |                 </EuiTitle>
+  156 |                 <EuiText grow={4}>
+> 157 |                   <p>{String(hit.fields.description).substring(0, 300)}<br>URL</p>
+      |                                                                               ^
+  158 |                 </EuiText>
+  159 |               </EuiFlexItem>
+  160 |             </EuiFlexGroup>
+    at instantiate (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7983:16)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+ @ ./src/index.js 6:0-24 9:59-62
+
+ERROR in src/App.js
+  Line 157:78:  Parsing error: Expected corresponding JSX closing tag for <br>. (157:78)
+
+webpack 5.70.0 compiled with 2 errors in 422 ms
+Compiling...
+Failed to compile.
+
+src/App.js
+Syntax error: Expected corresponding JSX closing tag for <br>. (157:78) (157:78)
+assets by status 2.11 MiB [cached] 1 asset
+asset index.html 1.12 KiB [emitted]
+asset asset-manifest.json 190 bytes [emitted]
+cached modules 1.97 MiB (javascript) 28.5 KiB (runtime) [cached] 151 modules
+./src/App.js 39 bytes [built] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/groupbkm2/projects/inrp_app/src/App.js: Expected corresponding JSX closing tag for <br>. (157:78)
+
+  155 |                 </EuiTitle>
+  156 |                 <EuiText grow={4}>
+> 157 |                   <p>{String(hit.fields.description).substring(0, 300)}<br>URL</p>
+      |                                                                               ^
+  158 |                 </EuiText>
+  159 |               </EuiFlexItem>
+  160 |             </EuiFlexGroup>
+    at instantiate (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7983:16)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+    at Parser.jsxParseElementAt (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:7945:32)
+ @ ./src/index.js 6:0-24 9:59-62
+
+ERROR in src/App.js
+  Line 157:78:  Parsing error: Expected corresponding JSX closing tag for <br>. (157:78)
+
+webpack 5.70.0 compiled with 2 errors in 50 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 9.04 MiB [emitted]
+  assets by chunk 8.97 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.0faee7a08eb18e58f8ee.hot-update.js 3.44 MiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.0faee7a08eb18e58f8ee.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 8.97 MiB (9.02 MiB) = static/js/bundle.js 5.53 MiB main.0faee7a08eb18e58f8ee.hot-update.js 3.44 MiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2307 modules
+runtime modules 31.8 KiB 16 modules
+javascript modules 12.9 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1257 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.f0fb5d35ab8adf36faf7.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.f0fb5d35ab8adf36faf7.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.f0fb5d35ab8adf36faf7.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1246 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.bdeb5d823e2cbc3172df.hot-update.js 19 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.bdeb5d823e2cbc3172df.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.bdeb5d823e2cbc3172df.hot-update.js 19 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.4 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1266 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.85ff67182a02665b3259.hot-update.js 19 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.85ff67182a02665b3259.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.85ff67182a02665b3259.hot-update.js 19 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.4 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1418 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.9057643fe705e1995e41.hot-update.js 19.3 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.9057643fe705e1995e41.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.9057643fe705e1995e41.hot-update.js 19.3 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1309 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.0c46195ca3d8e20de44b.hot-update.js 19.3 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.0c46195ca3d8e20de44b.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.0c46195ca3d8e20de44b.hot-update.js 19.3 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1037 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.10e5c7b9d6eb41ff0f5a.hot-update.js 19.3 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.10e5c7b9d6eb41ff0f5a.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.10e5c7b9d6eb41ff0f5a.hot-update.js 19.3 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 903 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.2a72e923669db27a4088.hot-update.js 19.4 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.2a72e923669db27a4088.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.2a72e923669db27a4088.hot-update.js 19.4 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1439 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.a4512cff1b179a33c82d.hot-update.js 19.4 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.a4512cff1b179a33c82d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.a4512cff1b179a33c82d.hot-update.js 19.4 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1226 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.41ac72a660ebb5553189.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.41ac72a660ebb5553189.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.41ac72a660ebb5553189.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1071 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.564b1e047037b0583cd1.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.564b1e047037b0583cd1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.564b1e047037b0583cd1.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1332 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.e5ed8ffaa52f975e04d1.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.e5ed8ffaa52f975e04d1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.e5ed8ffaa52f975e04d1.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1537 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.6c4f13d219a42512d784.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.6c4f13d219a42512d784.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.6c4f13d219a42512d784.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1403 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.dda686a80ea5a04da086.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.dda686a80ea5a04da086.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.dda686a80ea5a04da086.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.2 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1725 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.9326ccedb2abec49ba55.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.9326ccedb2abec49ba55.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.9326ccedb2abec49ba55.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.2 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1252 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.98e879e1b4989df38184.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.98e879e1b4989df38184.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.98e879e1b4989df38184.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1224 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.c2abbe569f9be8b39768.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.c2abbe569f9be8b39768.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.c2abbe569f9be8b39768.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1273 ms
+Compiling...
+Failed to compile.
+
+src/App.js
+Syntax error: Unexpected token, expected "," (155:55) (155:55)
+assets by chunk 2.13 MiB (name: main)
+  asset static/js/bundle.js 2.11 MiB [emitted] (name: main) 1 related asset
+  asset main.3c5268d0fd366c74e404.hot-update.js 21.5 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 61 KiB
+  asset main.3c5268d0fd366c74e404.hot-update.json 60.7 KiB [emitted] [immutable] [hmr]
+  asset asset-manifest.json 315 bytes [emitted]
+asset index.html 1.12 KiB [emitted]
+Entrypoint main 2.13 MiB (2.24 MiB) = static/js/bundle.js 2.11 MiB main.3c5268d0fd366c74e404.hot-update.js 21.5 KiB 2 auxiliary assets
+cached modules 1.97 MiB [cached] 136 modules
+runtime modules 28.5 KiB 14 modules
+javascript modules 1.78 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 39 bytes [built] [code generated] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/groupbkm2/projects/inrp_app/src/App.js: Unexpected token, expected "," (155:55)
+
+  153 |                 <EuiTitle size="xs">
+  154 |                   <h6>
+> 155 | 	            {String(Object.values(hit.fields.title)[0]}
+      | 	                                                      ^
+  156 | 	          </h6>
+  157 |                 </EuiTitle>
+  158 |                 <EuiText grow={4}>
+    at instantiate (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.unexpected (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:3372:16)
+    at Parser.expect (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:4001:28)
+    at Parser.parseCallExpressionArguments (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:12747:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:12662:29)
+    at Parser.parseSubscript (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:12587:19)
+    at Parser.parseSubscript (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:6780:18)
+    at Parser.parseSubscripts (/home/groupbkm2/projects/inrp_app/node_modules/@babel/parser/lib/index.js:12556:19)
+ @ ./src/index.js 6:0-24 9:59-62
+
+ERROR in src/App.js
+  Line 155:55:  Parsing error: Unexpected token, expected "," (155:55)
+
+webpack 5.70.0 compiled with 2 errors in 284 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 9.04 MiB [emitted]
+  assets by chunk 8.97 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.1e5c54ab1a1a4e09faec.hot-update.js 3.44 MiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.1e5c54ab1a1a4e09faec.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 8.97 MiB (9.02 MiB) = static/js/bundle.js 5.53 MiB main.1e5c54ab1a1a4e09faec.hot-update.js 3.44 MiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2307 modules
+runtime modules 31.8 KiB 16 modules
+javascript modules 12.9 KiB
+  ./src/index.js 1.75 KiB [code generated]
+  ./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1284 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.61 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.d68f8442da6e9fac948d.hot-update.js 18.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.d68f8442da6e9fac948d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.d68f8442da6e9fac948d.hot-update.js 18.7 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 11.1 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1127 ms
+Compiling...
+Compiled successfully!
+assets by status 1.35 MiB [cached] 405 assets
+assets by status 5.62 MiB [emitted]
+  assets by chunk 5.55 MiB (name: main)
+    asset static/js/bundle.js 5.53 MiB [emitted] (name: main) 1 related asset
+    asset main.44cc83dbb5ca5d777964.hot-update.js 20.6 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 65.6 KiB
+    asset asset-manifest.json 65.6 KiB [emitted]
+    asset main.44cc83dbb5ca5d777964.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.12 KiB [emitted]
+Entrypoint main 5.55 MiB (5.62 MiB) = static/js/bundle.js 5.53 MiB main.44cc83dbb5ca5d777964.hot-update.js 20.6 KiB 2 auxiliary assets
+cached modules 13.7 MiB [cached] 2308 modules
+runtime modules 31.8 KiB 16 modules
+./src/App.js 12.7 KiB [built] [code generated]
+webpack 5.70.0 compiled successfully in 1428 ms

@@ -70,6 +70,7 @@ const config = {
       label: "Topics",
       multipleSelect: true
     })
+    
     /*new RefinementSelectFacet({
       field: "type",
       identifier: "type",
@@ -153,9 +154,16 @@ const HitsList = ({ data }) => (
                 <EuiTitle size="xs">
                   <h6>{hit.fields.title}</h6>
                 </EuiTitle>
-                <EuiText grow={4}>
-                  <p>{String(hit.fields.description).substring(0, 300)}</p>
+                <EuiText grow={false}>
+          <b>{hit.fields.creator.join(", ")}</b>
                 </EuiText>
+                <EuiText grow={4}>
+                 <p>{String(hit.fields.description).substring(0, 300)}</p>
+                </EuiText>
+                <EuiText grow={false}>
+                
+              <a href = {hit.fields.identifier[0]} target="_blank">{hit.fields.identifier[0]}</a>
+              </EuiText>
               </EuiFlexItem>
             </EuiFlexGroup>
           </EuiFlexItem>
@@ -182,6 +190,7 @@ function App() {
             <EuiTitle size="l">
               <SelectedFilters data={results} loading={loading} />
             </EuiTitle>
+            <h1><strong>INTEGRATED NATIONAL RESEARCH PORTAL</strong></h1>
           </EuiPageHeaderSection>
           <EuiPageHeaderSection>
             <ResetSearchButton loading={loading} />
@@ -208,3 +217,4 @@ function App() {
 }
 
 export default App;
+
