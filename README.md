@@ -1,10 +1,7 @@
-## Searchkit Starter App
+## About inrp_portal Repository
+The INRP Portal software is meant to be used to harvest research output produced by various Research Institutes in Zambia and present them using a single unified platform.
 
-Used to start new applications which use Searchkit. Based off the popular create-react-app. If you dont know about `create-react-app`, please read their [readme](https://github.com/facebookincubator/create-react-app/blob/master/README.md) and install create-react-app on your machine
+The INRP Portal software is based on the popular Searchkit starter app [1]
 
-## Install instructions
-
-- git clone https://github.com/searchkit/searchkit-starter-app.git
-- cd searchkit-starter-app
-- yarn
-- npm start
+## Bibliography
+[1] https://github.com/searchkit/searchkit-starter-app.git
