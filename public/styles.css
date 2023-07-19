@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  line-height: calc(1em + .5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #e2e6f1, #cfd9ec, #f7f9fd);
+  margin-top: 2rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
+}
+
+h1, h3 {
+  color: hotpink;
+}
+
+a {
+  text-decoration: none;
+}

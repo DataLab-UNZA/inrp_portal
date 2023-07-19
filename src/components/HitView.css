@@ -1,0 +1,36 @@
+.hit-card {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.hit-card h2 {
+  font-size: 1.3rem;
+}
+
+.hit-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hit-details {
+  margin-top: 8px;
+}
+
+.hit-field {
+  margin-bottom: 8px;
+}
+
+/* Add responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .hit-card {
+    padding: 12px;
+  }
+
+  .hit-title {
+    font-size: 16px;
+  }
+}
+

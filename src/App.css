@@ -1,0 +1,65 @@
+/* App.css */
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 900;
+  color: hotpink;
+      
+}
+
+.header_stats {
+  color: gray;
+}
+
+.header .ais-SearchBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 20rem;
+}
+
+/* Main content container */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-content h2 {
+  color: #3A4570;
+  font-weight: 900;
+}
+
+/* Left panel */
+.left-panel {
+  padding: 2rem;
+}
+
+.left-panel h3,
+.left-panel_refinement-list
+{
+  margin-bottom: 1rem;
+}
+
+/* Right panel */
+.right-panel {
+  flex-grow: 1;
+}
+
+/* Hits panel */
+.hits-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
