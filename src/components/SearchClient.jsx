@@ -3,7 +3,7 @@ import Searchkit from "searchkit";
 
 const sk = new Searchkit({
   connection: {
-    host: "http://localhost:9200",
+    host: "http://localhost:9200"
   },
   search_settings: {
     search_attributes: ['Title', 'Authors', 'Institution', 'Abstract'],
@@ -14,6 +14,7 @@ const sk = new Searchkit({
       { attribute: 'Authors', field: 'Authors', type: "string" },
       { attribute: 'Institution', field: 'Institution', type: "string" },
       { attribute: 'Publication Type', field: 'Publication Type', type: "string" },
+      { attribute: 'Publication Venue', field: 'Publication Venue', type: "string" },
     ]
   },
 })

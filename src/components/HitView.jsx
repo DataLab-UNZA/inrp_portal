@@ -25,7 +25,7 @@ const HitView = ({ hit }) => (
       </div>
 
       <div className="hit-field">
-        <strong>Publication Year:</strong> {hit["Publication Date"]}
+        <strong>Publication Date:</strong> {hit["Publication Date"]}
       </div>
     </div>
   </div>

@@ -6,6 +6,9 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  background-color: var(--color-brand-primary);
+  padding: 2rem;
+  box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
@@ -13,12 +16,13 @@
   text-align: left;
   font-size: 2rem;
   font-weight: 900;
-  color: hotpink;
+  color: var(--color-brand-contast);
       
 }
 
 .header_stats {
   color: gray;
+  padding: .3rem 0;
 }
 
 .header .ais-SearchBox {
@@ -33,17 +37,28 @@
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-brand-primary);
+  padding-right: 2rem;
 }
 
 .main-content h2 {
-  color: #3A4570;
+  color: var(--color-brand-primary);
   font-weight: 900;
+}
+
+.hit-card {
+  margin-bottom: 0;
+}
+
+.ais-Pagination-list {
+  margin: 1rem 0;
 }
 
 /* Left panel */
 .left-panel {
   padding: 2rem;
+  max-width: 45%;
 }
 
 .left-panel h3,
@@ -52,9 +67,33 @@
   margin-bottom: 1rem;
 }
 
-/* Right panel */
-.right-panel {
-  flex-grow: 1;
+/* Styling the RefinementList */
+.ais-RefinementList-item {
+  display: flex;
+  align-items: center;
+}
+
+.ais-RefinementList-checkbox {
+  margin-right: 0.5rem;
+  padding: .4rem;
+}
+
+.ais-RefinementList-label {
+  font-weight: 500;
+  color: #333; 
+  padding: .2rem;
+  text-transform: capitalize;
+}
+
+
+/* Styling selected items */
+.ais-RefinementList-item--selected {
+  background-color: #f0f0f0; 
+}
+
+/* Hover effect on list items */
+.ais-RefinementList-item:hover {
+  background-color: #f9f9f9; 
 }
 
 /* Hits panel */
@@ -62,4 +101,19 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #333;
 }

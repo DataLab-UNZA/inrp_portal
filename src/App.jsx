@@ -17,7 +17,6 @@ const App = () => (
     <div className="header">
       <div>
         <a href="/"><h1>Zambia National Research Portal</h1></a>
-        <Stats className="header_stats" />
       </div>
       <SearchBox placeholder="Type here to search..." />
     </div>
@@ -35,21 +34,29 @@ const App = () => (
           searchable 
           searchablePlaceholder="Filter publication types..."
         />
-
-        <h3>Search By Authors</h3>
+        <h3>Search By Publication Venue</h3>
         <RefinementList 
           className="left-panel_refinement-list" 
-          attribute="Authors" 
+          attribute="Publication Venue" 
           showMore 
-          searchable
-          searchablePlaceholder="Filter authors..."
+          searchable 
+          searchablePlaceholder="Filter publication venue..."
         />
       </div>
 
       <div className="right-panel">
+        <Stats className="header_stats" />
         <Configure hitsPerPage={5} />
-        <Hits hitComponent={HitView} /> <Pagination />
+        <Hits hitComponent={HitView} /> 
+        <Pagination />
       </div>
+    </div>
+
+    <div className="footer">
+      <p>All rights reserved &copy; {new Date().getFullYear()} Zambia National Research Portal</p>
+      <p>University of Zambia</p>
+      <p>Great East Road Campus</p>
+      <p>Lusaka, Zambia</p>
     </div>
   </InstantSearch>
 );

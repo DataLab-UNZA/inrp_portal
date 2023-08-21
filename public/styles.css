@@ -1,3 +1,12 @@
+:root {
+  --color-brand-primary: #a1603b;
+  --color-brand-contast: #fff;
+  --color-medium-gray: #898989;
+  --color-light-gray: #ccc;
+  --color-background: #e5e5e5;
+  --font-body: 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   line-height: calc(1em + .5rem);
@@ -8,18 +17,26 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, #e2e6f1, #cfd9ec, #f7f9fd);
+  font-family: var(--font-body);
+  background: var(--color-background);
   margin-top: 2rem;
   margin-right: 10rem;
-  margin-bottom: 10rem;
   margin-left: 10rem;
 }
 
 h1, h3 {
-  color: hotpink;
+  color: var(--color-brand-primary);
+  font-weight: 900;
 }
 
 a {
+  color: #3366cc;
   text-decoration: none;
 }
+
+a:hover,
+a:active,
+a:visited {
+  color: #3366cc; 
+}
+
