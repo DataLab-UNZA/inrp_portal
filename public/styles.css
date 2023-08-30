@@ -1,15 +1,15 @@
 :root {
-  --color-brand-primary: #a1603b;
-  --color-brand-contast: #fff;
+  --color-brand-primary: #5a7590;
+  --color-brand-contrast: #fff;
   --color-medium-gray: #898989;
   --color-light-gray: #ccc;
-  --color-background: #e5e5e5;
+  --color-background: #fff;
   --font-body: 'Roboto', sans-serif;
 }
 
 * {
   margin: 0;
-  line-height: calc(1em + .5rem);
+  line-height: calc(1em + 0.5rem);
 }
 
 html {
@@ -24,7 +24,8 @@ body {
   margin-left: 10rem;
 }
 
-h1, h3 {
+h1,
+h3 {
   color: var(--color-brand-primary);
   font-weight: 900;
 }
@@ -37,6 +38,5 @@ a {
 a:hover,
 a:active,
 a:visited {
-  color: #3366cc; 
+  color: #3366cc;
 }
-

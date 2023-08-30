@@ -1,64 +1,69 @@
-import { 
-  InstantSearch, 
-  SearchBox, Hits, 
-  RefinementList, 
+import {
+  InstantSearch,
+  Hits,
+  RefinementList,
   Pagination,
   Configure,
   Stats,
-} from "react-instantsearch-hooks-web";
+} from 'react-instantsearch-hooks-web';
 
-import HitView from './components/HitView'
-import searchClient from './components/SearchClient'
+import HitView from './components/HitView';
+import searchClient from './components/SearchClient';
+import NavbarComp from './components/NavbarComp';
 
-import "./App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import './App.css';
 
 const App = () => (
   <InstantSearch indexName="znrp" searchClient={searchClient}>
-    <div className="header">
-      <div>
-        <a href="/"><h1>Zambia National Research Portal</h1></a>
-      </div>
-      <SearchBox placeholder="Type here to search..." />
-    </div>
+    <Container>
+      <NavbarComp />
+      <Row>
+        <Col xs={3} className="d-none d-sm-block">
+          <h5>Search By Institution</h5>
+          <RefinementList attribute="Institution" />
+          <h5>Search By Publication Type</h5>
+          <RefinementList
+            attribute="Publication Type"
+            showMore
+            searchable
+            searchablePlaceholder="Filter publication types..."
+          />
+          <h5>Search By Publication Venue</h5>
+          <RefinementList
+            attribute="Publication Venue"
+            showMore
+            searchable
+            searchablePlaceholder="Filter publication venue..."
+          />
+        </Col>
+        <Col xs={9}>
+          <Stats />
+          <Configure hitsPerPage={5} />
+          <Hits hitComponent={HitView} />
+        </Col>
+      </Row>
 
-    <div className="main-content">
-      <div className="left-panel">
-        <h3>Search By Institution</h3>
-        <RefinementList className="left-panel_refinement-list" attribute="Institution" />
-
-        <h3>Search By Publication Type</h3>
-        <RefinementList 
-          className="left-panel_refinement-list" 
-          attribute="Publication Type" 
-          showMore 
-          searchable 
-          searchablePlaceholder="Filter publication types..."
-        />
-        <h3>Search By Publication Venue</h3>
-        <RefinementList 
-          className="left-panel_refinement-list" 
-          attribute="Publication Venue" 
-          showMore 
-          searchable 
-          searchablePlaceholder="Filter publication venue..."
-        />
-      </div>
-
-      <div className="right-panel">
-        <Stats className="header_stats" />
-        <Configure hitsPerPage={5} />
-        <Hits hitComponent={HitView} /> 
+      <div className="d-flex justify-content-center">
         <Pagination />
       </div>
-    </div>
+    </Container>
 
-    <div className="footer">
-      <p>All rights reserved &copy; {new Date().getFullYear()} Zambia National Research Portal</p>
-      <p>University of Zambia</p>
-      <p>Great East Road Campus</p>
-      <p>Lusaka, Zambia</p>
-    </div>
+    <Container className="footer text-center py-4">
+      <Row>
+        <Col>
+          <p className="mb-0">
+            All rights reserved &copy; {new Date().getFullYear()} Zambia
+            National Research Portal
+          </p>
+          <p className="mb-0">University of Zambia</p>
+          <p className="mb-0">Great East Road Campus</p>
+          <p className="mb-0">Lusaka, Zambia</p>
+        </Col>
+      </Row>
+    </Container>
   </InstantSearch>
 );
- 
+
 export default App;

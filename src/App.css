@@ -1,119 +1,43 @@
 /* App.css */
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  background-color: var(--color-brand-primary);
-  padding: 2rem;
-  box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.2);
-}
-
-.header h1 {
-  margin: 0;
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--color-brand-contast);
-      
-}
-
-.header_stats {
-  color: gray;
-  padding: .3rem 0;
-}
-
-.header .ais-SearchBox {
-  display: flex;
-  justify-content: flex-end;
+.search-box {
   width: 20rem;
 }
 
-/* Main content container */
-.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--color-brand-primary);
-  padding-right: 2rem;
-}
-
-.main-content h2 {
-  color: var(--color-brand-primary);
-  font-weight: 900;
-}
-
-.hit-card {
-  margin-bottom: 0;
+.ais-Stats {
+  color: #686363;
 }
 
 .ais-Pagination-list {
   margin: 1rem 0;
 }
 
-/* Left panel */
-.left-panel {
-  padding: 2rem;
-  max-width: 45%;
-}
-
-.left-panel h3,
-.left-panel_refinement-list
-{
-  margin-bottom: 1rem;
-}
-
-/* Styling the RefinementList */
-.ais-RefinementList-item {
-  display: flex;
-  align-items: center;
-}
-
-.ais-RefinementList-checkbox {
-  margin-right: 0.5rem;
-  padding: .4rem;
-}
-
-.ais-RefinementList-label {
-  font-weight: 500;
-  color: #333; 
-  padding: .2rem;
-  text-transform: capitalize;
-}
-
-
 /* Styling selected items */
 .ais-RefinementList-item--selected {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 /* Hover effect on list items */
 .ais-RefinementList-item:hover {
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
 }
 
-/* Hits panel */
-.hits-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Footer */
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 0;
+  background-color: var(--color-brand-primary);
+  color: white;
+  margin-bottom: 1rem;
 }
 
-.footer p {
-  margin: 0;
-  font-size: 0.8rem;
+.container h5 {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-contrast);
+  padding: 0.5rem;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+  font-weight: 100;
+  font-family: Sansita, sans-serif;
+}
+
+.ais-RefinementList-label {
   color: #333;
+  padding: .2rem;
 }

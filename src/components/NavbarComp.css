@@ -1,0 +1,12 @@
+.container nav {
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-brand-primary);
+}
+
+.container .navbar-brand {
+  color: var(--color-brand-contrast);
+  font-family: Sansita, sans-serif;
+  font-size: xx-large;
+}
