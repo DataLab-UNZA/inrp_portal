@@ -10,6 +10,7 @@
   color: var(--color-brand-primary);
   font-weight: 600;
   font-family: Roboto;
+  text-transform: uppercase;
 }
 
 .hit-card {
