@@ -3,7 +3,7 @@ import Searchkit from 'searchkit';
 
 const sk = new Searchkit({
   connection: {
-    host: 'http://16.171.230.55:9200',
+    host: 'http://13.51.206.147:9200',
   },
   search_settings: {
     search_attributes: ['Title', 'Authors', 'Institution', 'Abstract'],
