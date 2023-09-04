@@ -57,7 +57,7 @@ const App = () => (
             All rights reserved &copy; {new Date().getFullYear()} Zambia
             National Research Portal
           </p>
-          <p className="mb-0">DataLab Research Group, University of Zambia"</p>
+          <p className="mb-0">DataLab Research Group, University of Zambia</p>
           <p className="mb-0">Great East Road Campus</p>
           <p className="mb-0">Lusaka, Zambia</p>
         </Col>
